@@ -18,6 +18,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#beyond">Beyond</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -47,10 +48,10 @@
           <span class="pill">MIT '30 — Computer Science</span>
         </div>
       </div>
-      <!-- Swap this div for: <img src="portrait.jpg" alt="Ella Lu" class="photo-slot"> -->
-      <div class="photo-slot photo-slot--portrait">
-        <span>+ portrait photo<br><em>e.g. portrait.jpg</em></span>
-      </div>
+      <img src="images/portrait.jpg" alt="Ella Lu" class="photo-slot">
+      <!-- <div class="photo-slot photo-slot--portrait">
+        <span>+ portrait photo<br><em>e.g. images/portrait.jpg</em></span>
+      </div> -->
     </div>
   </div>
 </section>
@@ -89,10 +90,12 @@
       <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/posters/2026STS_Lu.Ella_poster.pdf" target="_blank" rel="noopener">Research poster (PDF) ↗</a>
     </div>
 
-    <!-- Swap this div for: <img src="canvas-example.jpg" alt="Example painting analyzed by CANVAS" class="photo-slot"> -->
-    <div class="photo-slot photo-slot--wide">
-      <span>+ example painting / output screenshot<br><em>e.g. canvas-example.jpg</em></span>
-    </div>
+    <!-- Swap this div for: <img src="images/canvas-example.jpg" alt="Example painting analyzed by CANVAS" class="photo-slot"> -->
+    <!-- <div class="photo-slot photo-slot--wide">
+      <span>+ example painting / output screenshot<br><em>e.g. images/canvas-example.jpg</em></span>
+    </div> -->
+
+    <img src="images/paintings.png" alt="Attributes defined by CANVAS" class="photo-slot">
 
     <figure class="diagram">
       <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simplified diagram of the CANVAS pipeline: labeled paintings feed a trained model alongside Grounding DINO object detection, producing a steelyard composition score">
@@ -123,12 +126,70 @@
       </svg>
       <figcaption>fig. 2.2 — simplified CANVAS pipeline</figcaption>
     </figure>
+
+    <!-- Swap each div for: <img src="images/research1.jpg" alt="..." class="photo-slot"> -->
+    <figure class="gallery-figure">
+      <div class="gallery-row">
+        <img src="images/regeneron1.jpeg" alt="..." class="photo-slot">
+        <img src="images/regeneron2.jpeg" alt="..." class="photo-slot">
+        <img src="images/regeneron3.png" alt="..." class="photo-slot">
+      </div>
+      <figcaption>fig. 2.3 — from the process</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="fig">fig. 3 — projects</p>
+    <h2>Other work, and what's next</h2>
+    <p class="lede">CANVAS is the project I've spent the most time on, but it's not the only one. This section is where I'll add new work as I build it — for now, one more from before it.</p>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <p class="fig">fig. 3.1</p>
+        <h3>MaraMap</h3>
+        <p>An interactive tool for visualizing Internet topology from user-submitted traceroute data, built with the Google Maps API. It plots routers and their connections geographically, with clickable nodes showing IP, latency, and routing details. I used it in a case study tracing how AWS CloudFront routes client traffic to edge servers, built with researchers at Duke University.</p>
+        <div class="meta-row">
+          <span class="pill">IEEE ICNP 2023 — Demo Paper</span>
+          <span class="pill">Duke University</span>
+        </div>
+        <!-- Swap this div for: <img src="images/maramap.jpg" alt="Screenshot of the MaraMap Internet topology visualization" class="photo-slot"> -->
+        <!-- <div class="photo-slot photo-slot--wide">
+          <span>+ MaraMap screenshot<br><em>e.g. images/maramap.jpg</em></span>
+        </div> -->
+
+        <img src="images/maramap.png" alt="Screenshot of the MaraMap Internet topology visualization" class="photo-slot">
+      </article>
+
+      <article class="project-card">
+        <p class="fig">fig. 3.2</p>
+        <h3>Into the Amazon</h3>
+        <p>A children's storybook illustrating the different species that live in each layer of the Amazon rainforest, illustrated digitally in Procreate. Placed 9th at TSA Nationals.</p>
+        <div class="meta-row">
+          <span class="pill">TSA Nationals — 9th Place</span>
+          <span class="pill">Procreate</span>
+        </div>
+        <!-- Swap this div for: <img src="images/into-the-amazon.jpg" alt="Spread from the Into the Amazon storybook" class="photo-slot"> -->
+        <img src="images/into-the-amazon.png" alt="Spread from the Into the Amazon storybook" class="photo-slot">
+        
+        <!-- <div class="photo-slot photo-slot--wide">
+          <span>+ storybook spread<br><em>e.g. images/into-the-amazon.jpg</em></span>
+        </div> -->
+      </article>
+
+      <article class="project-card project-card--empty">
+        <p class="fig">fig. 3.3</p>
+        <h3>Next project</h3>
+        <p>This spot's open for whatever I build next.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section id="beyond">
   <div class="wrap">
-    <p class="fig">fig. 3 — beyond the research</p>
+    <p class="fig">fig. 4 — beyond the research</p>
     <h2>Everything else I make time for</h2>
     <div class="beyond-grid">
       <div class="beyond-item">
@@ -137,7 +198,7 @@
       </div>
       <div class="beyond-item">
         <h3>Blue Mirror</h3>
-        <p>Editor-in-chief of my school's literary arts magazine — the closest overlap between my writing and visual art outside of CANVAS.</p>
+        <p>Editor-in-chief of my school's literary arts magazine, laid out in InDesign and Photoshop — the closest overlap between my writing and visual art outside of CANVAS.</p>
       </div>
       <div class="beyond-item">
         <h3>Visual art</h3>
@@ -149,18 +210,18 @@
       </div>
     </div>
 
-    <!-- Swap each div for: <img src="artwork1.jpg" alt="..." class="photo-slot"> -->
+    <!-- Swap each div for: <img src="images/art1.jpg" alt="..." class="photo-slot"> -->
     <div class="gallery-row">
-      <div class="photo-slot"><span>+ art photo</span></div>
-      <div class="photo-slot"><span>+ art photo</span></div>
-      <div class="photo-slot"><span>+ art photo</span></div>
+      <img src="images/crescendo.jpeg" alt="..." class="photo-slot">
+      <img src="images/dreamon.jpg" alt="..." class="photo-slot">
+      <img src="images/my origin.jpeg" alt="..." class="photo-slot">
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="wrap">
-    <p class="fig">fig. 4 — get in touch</p>
+    <p class="fig">fig. 5 — get in touch</p>
     <h2>Say hello</h2>
     <p class="lede">I'll be at MIT starting fall 2026 studying computer science — happy to talk research, art, or anything in between.</p>
     <div class="links-row">
