@@ -30,11 +30,42 @@
     <h1>Ella Lu</h1>
     <p class="hero-sub">Incoming computer science student at MIT. I spend most of my time trying to teach machines to see composition the way artists do — and the rest of it making the art myself.</p>
     <p class="hero-loc">Chapel Hill, NC → Cambridge, MA, Fall 2026</p>
+  </div>
+</header>
 
-    <div class="balance">
+<section id="about">
+  <div class="wrap">
+    <p class="fig">fig. 1 — about</p>
+    <h2>Research first, art always</h2>
+    <div class="about-grid">
+      <div>
+        <p class="lede">I'm a recent graduate of the North Carolina School of Science and Mathematics, heading to MIT this fall to study computer science. Most of my high school years went toward research rather than shipping apps or websites — this site is a bit of a departure, and my first real project of that kind.</p>
+        <p>Alongside the research, I've always made things by hand: I draw, paint, crochet, and play piano and guitar. That overlap between analytical work and visual art isn't a coincidence — it's the reason my main research project exists in the first place.</p>
+        <div class="meta-row">
+          <span class="pill">Regeneron STS 2026 — Top 40 Finalist</span>
+          <span class="pill">NCSSM, Durham NC</span>
+          <span class="pill">MIT '30 — Computer Science</span>
+        </div>
+      </div>
+      <!-- Swap this div for: <img src="portrait.jpg" alt="Ella Lu" class="photo-slot"> -->
+      <div class="photo-slot photo-slot--portrait">
+        <span>+ portrait photo<br><em>e.g. portrait.jpg</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <p class="fig">fig. 2 — featured research</p>
+    <h2>CANVAS: teaching machines to read composition</h2>
+    <p class="lede">People can look at a painting and immediately sense whether it feels balanced. Computers can't do that without help — they need an explicit, rule-based way to evaluate an image. CANVAS (Compositional Analysis of Visual Art Structure) is my attempt at building that rule-based bridge.</p>
+    <p>The project centers on a technique called <em>steelyard composition</em>, where a large, eye-catching element on one side of a painting is balanced by several smaller elements on the other — the visual equivalent of a balance scale:</p>
+
+    <figure class="diagram diagram--balance">
       <svg viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line illustration of a steelyard balance, one large weight on the left resting against several small weights on the right">
         <line x1="20" y1="128" x2="480" y2="128" stroke="var(--line)" stroke-width="1"/>
-        <g class="fulcrum-group">
+        <g>
           <polygon points="250,80 258,96 242,96" fill="var(--ink)"/>
           <line x1="250" y1="80" x2="250" y2="30" stroke="var(--ink)" stroke-width="1.5"/>
           <line x1="70" y1="34" x2="430" y2="34" stroke="var(--ink)" stroke-width="1.5"/>
@@ -48,35 +79,19 @@
           <circle cx="360" cy="54" r="5" fill="none" stroke="var(--sienna)" stroke-width="2"/>
         </g>
       </svg>
-      <div class="balance-cap"><span>large form</span><span>steelyard composition</span><span>counterweights</span></div>
-    </div>
-  </div>
-</header>
+      <figcaption>fig. 2.1 — steelyard composition: one large form balanced by several smaller counterweights</figcaption>
+    </figure>
 
-<section id="about">
-  <div class="wrap">
-    <p class="fig">fig. 1 — about</p>
-    <h2>Research first, art always</h2>
-    <p class="lede">I'm a recent graduate of the North Carolina School of Science and Mathematics, heading to MIT this fall to study computer science. Most of my high school years went toward research rather than shipping apps or websites — this site is a bit of a departure, and my first real project of that kind.</p>
-    <p>Alongside the research, I've always made things by hand: I draw, paint, crochet, and play piano and guitar. That overlap between analytical work and visual art isn't a coincidence — it's the reason my main research project exists in the first place.</p>
-    <div class="meta-row">
-      <span class="pill">Regeneron STS 2026 — Top 40 Finalist</span>
-      <span class="pill">NCSSM, Durham NC</span>
-      <span class="pill">MIT '30 — Computer Science</span>
-    </div>
-  </div>
-</section>
-
-<section id="research">
-  <div class="wrap">
-    <p class="fig">fig. 2 — featured research</p>
-    <h2>CANVAS: teaching machines to read composition</h2>
-    <p class="lede">People can look at a painting and immediately sense whether it feels balanced. Computers can't do that without help — they need an explicit, rule-based way to evaluate an image. CANVAS (Compositional Analysis of Visual Art Structure) is my attempt at building that rule-based bridge.</p>
-    <p>The project centers on a technique called <em>steelyard composition</em>, where a large, eye-catching element on one side of a painting is balanced by several smaller elements on the other — the visual equivalent of a balance scale. I hand-labeled a large public dataset of Impressionist landscape paintings for steelyard composition and related techniques, then used those labels to train a model. I paired that with Grounding DINO, an existing object-recognition tool, so the system could locate the visual elements it needed to weigh against each other. Together, this let CANVAS identify steelyard composition directly in paintings — a small step toward machines that read art the way a trained eye does.</p>
+    <p>I hand-labeled a large public dataset of Impressionist landscape paintings for steelyard composition and related techniques, then used those labels to train a model. I paired that with Grounding DINO, an existing object-recognition tool, so the system could locate the visual elements it needed to weigh against each other. Together, this let CANVAS identify steelyard composition directly in paintings — a small step toward machines that read art the way a trained eye does.</p>
     <p>This work was selected as a Top 40 Finalist project at the 2026 Regeneron Science Talent Search.</p>
     <div class="links-row">
       <a href="https://www.societyforscience.org/regeneron-sts/2026-student-finalists/ella-lu/" target="_blank" rel="noopener">Regeneron STS profile ↗</a>
       <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/posters/2026STS_Lu.Ella_poster.pdf" target="_blank" rel="noopener">Research poster (PDF) ↗</a>
+    </div>
+
+    <!-- Swap this div for: <img src="canvas-example.jpg" alt="Example painting analyzed by CANVAS" class="photo-slot"> -->
+    <div class="photo-slot photo-slot--wide">
+      <span>+ example painting / output screenshot<br><em>e.g. canvas-example.jpg</em></span>
     </div>
 
     <figure class="diagram">
@@ -106,7 +121,7 @@
           <line x1="340" y1="128" x2="435" y2="96" stroke="var(--muted)" stroke-width="1"/>
         </g>
       </svg>
-      <figcaption>fig. 2.1 — simplified CANVAS pipeline</figcaption>
+      <figcaption>fig. 2.2 — simplified CANVAS pipeline</figcaption>
     </figure>
   </div>
 </section>
@@ -132,6 +147,13 @@
         <h3>Music</h3>
         <p>Piano and guitar, mostly for myself, but composition thinking shows up here too.</p>
       </div>
+    </div>
+
+    <!-- Swap each div for: <img src="artwork1.jpg" alt="..." class="photo-slot"> -->
+    <div class="gallery-row">
+      <div class="photo-slot"><span>+ art photo</span></div>
+      <div class="photo-slot"><span>+ art photo</span></div>
+      <div class="photo-slot"><span>+ art photo</span></div>
     </div>
   </div>
 </section>

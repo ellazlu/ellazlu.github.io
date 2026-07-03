@@ -66,15 +66,6 @@ h1{
 }
 .hero-loc{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:14px;}
 
-.balance{
-  display:block;margin:52px 0 0;
-}
-.balance svg{width:100%;height:auto;display:block;}
-.balance-cap{
-  font-family:var(--mono);font-size:11.5px;color:var(--muted);
-  display:flex;justify-content:space-between;margin-top:10px;
-}
-
 /* -------- sections -------- */
 section{padding:64px 0;border-top:1px solid var(--line);}
 .fig{
@@ -87,6 +78,10 @@ h2{
 }
 p{margin:0 0 16px;max-width:640px;color:#302f2a;}
 .lede{font-size:17px;}
+
+.about-grid{
+  display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start;
+}
 
 .meta-row{
   display:flex;flex-wrap:wrap;gap:10px 14px;margin:22px 0 30px;
@@ -105,6 +100,31 @@ figure.diagram svg{width:100%;height:auto;display:block;}
 figcaption{
   font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:10px;
 }
+figure.diagram--balance{
+  max-width:420px;padding:20px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+
+/* -------- photo placeholders -------- */
+.photo-slot{
+  border:1px dashed var(--line);
+  background:var(--canvas-dim);
+  color:var(--muted);
+  font-family:var(--mono);font-size:11.5px;line-height:1.5;text-align:center;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:2px;
+  min-height:120px;
+  width:100%;
+  object-fit:cover;
+}
+.photo-slot span{padding:16px;}
+.photo-slot em{font-style:normal;color:#a8a496;}
+.photo-slot--portrait{aspect-ratio:3/4;}
+.photo-slot--wide{aspect-ratio:16/9;margin:8px 0 32px;}
+
+.gallery-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;
+}
+.gallery-row .photo-slot{aspect-ratio:1/1;}
 
 .beyond-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:36px 40px;margin-top:8px;
@@ -123,12 +143,7 @@ footer p{font-family:var(--mono);font-size:12px;color:var(--muted);}
   header.hero{padding:64px 0 44px;}
   .beyond-grid{grid-template-columns:1fr;gap:28px;}
   .nav-links{gap:16px;}
-}
-
-@media (prefers-reduced-motion:no-preference){
-  .balance .fulcrum-group{transform-origin:250px 92px;animation:tip 7s ease-in-out infinite;}
-}
-@keyframes tip{
-  0%,100%{transform:rotate(0deg);}
-  50%{transform:rotate(1.4deg);}
+  .about-grid{grid-template-columns:1fr;gap:28px;}
+  .photo-slot--portrait{max-width:280px;aspect-ratio:4/3;}
+  .gallery-row{grid-template-columns:repeat(3,1fr);gap:10px;}
 }
