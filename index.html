@@ -1,19 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ella Lu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ella Lu</title>
+<meta name="description" content="Ella Lu — incoming MIT computer science student, researcher, and artist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Hello! I'm Ella. </h1>
 
-    <h2>About Me</h2>
-    <p>I'm interested in computer science, art, and research.</p>
-
-    <h2>Projects</h2>
-    <ul>
-        <li>CANVAS</li>
-        <li>Personal Art</li>
+<nav>
+  <div class="wrap">
+    <a class="nav-mark" href="#top">EL / 2026</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio — fig. 0</p>
+    <h1>Ella Lu</h1>
+    <p class="hero-sub">Incoming computer science student at MIT. I spend most of my time trying to teach machines to see composition the way artists do — and the rest of it making the art myself.</p>
+    <p class="hero-loc">Chapel Hill, NC → Cambridge, MA, Fall 2026</p>
+
+    <div class="balance">
+      <svg viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line illustration of a steelyard balance, one large weight on the left resting against several small weights on the right">
+        <line x1="20" y1="128" x2="480" y2="128" stroke="var(--line)" stroke-width="1"/>
+        <g class="fulcrum-group">
+          <polygon points="250,80 258,96 242,96" fill="var(--ink)"/>
+          <line x1="250" y1="80" x2="250" y2="30" stroke="var(--ink)" stroke-width="1.5"/>
+          <line x1="70" y1="34" x2="430" y2="34" stroke="var(--ink)" stroke-width="1.5"/>
+          <line x1="70" y1="34" x2="70" y2="58" stroke="var(--muted)" stroke-width="1"/>
+          <circle cx="70" cy="72" r="26" fill="none" stroke="var(--ultramarine)" stroke-width="2"/>
+          <line x1="430" y1="34" x2="430" y2="52" stroke="var(--muted)" stroke-width="1"/>
+          <circle cx="430" cy="60" r="7" fill="none" stroke="var(--sienna)" stroke-width="2"/>
+          <line x1="392" y1="34" x2="392" y2="50" stroke="var(--muted)" stroke-width="1"/>
+          <circle cx="392" cy="57" r="6" fill="none" stroke="var(--sienna)" stroke-width="2"/>
+          <line x1="360" y1="34" x2="360" y2="48" stroke="var(--muted)" stroke-width="1"/>
+          <circle cx="360" cy="54" r="5" fill="none" stroke="var(--sienna)" stroke-width="2"/>
+        </g>
+      </svg>
+      <div class="balance-cap"><span>large form</span><span>steelyard composition</span><span>counterweights</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <p class="fig">fig. 1 — about</p>
+    <h2>Research first, art always</h2>
+    <p class="lede">I'm a recent graduate of the North Carolina School of Science and Mathematics, heading to MIT this fall to study computer science. Most of my high school years went toward research rather than shipping apps or websites — this site is a bit of a departure, and my first real project of that kind.</p>
+    <p>Alongside the research, I've always made things by hand: I draw, paint, crochet, and play piano and guitar. That overlap between analytical work and visual art isn't a coincidence — it's the reason my main research project exists in the first place.</p>
+    <div class="meta-row">
+      <span class="pill">Regeneron STS 2026 — Top 40 Finalist</span>
+      <span class="pill">NCSSM, Durham NC</span>
+      <span class="pill">MIT '30 — Computer Science</span>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <p class="fig">fig. 2 — featured research</p>
+    <h2>CANVAS: teaching machines to read composition</h2>
+    <p class="lede">People can look at a painting and immediately sense whether it feels balanced. Computers can't do that without help — they need an explicit, rule-based way to evaluate an image. CANVAS (Compositional Analysis of Visual Art Structure) is my attempt at building that rule-based bridge.</p>
+    <p>The project centers on a technique called <em>steelyard composition</em>, where a large, eye-catching element on one side of a painting is balanced by several smaller elements on the other — the visual equivalent of a balance scale. I hand-labeled a large public dataset of Impressionist landscape paintings for steelyard composition and related techniques, then used those labels to train a model. I paired that with Grounding DINO, an existing object-recognition tool, so the system could locate the visual elements it needed to weigh against each other. Together, this let CANVAS identify steelyard composition directly in paintings — a small step toward machines that read art the way a trained eye does.</p>
+    <p>This work was selected as a Top 40 Finalist project at the 2026 Regeneron Science Talent Search.</p>
+    <div class="links-row">
+      <a href="https://www.societyforscience.org/regeneron-sts/2026-student-finalists/ella-lu/" target="_blank" rel="noopener">Regeneron STS profile ↗</a>
+      <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/posters/2026STS_Lu.Ella_poster.pdf" target="_blank" rel="noopener">Research poster (PDF) ↗</a>
+    </div>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simplified diagram of the CANVAS pipeline: labeled paintings feed a trained model alongside Grounding DINO object detection, producing a steelyard composition score">
+        <rect x="0" y="0" width="700" height="180" fill="none"/>
+        <g font-family="Space Mono, monospace" font-size="11" fill="var(--muted)">
+          <rect x="10" y="60" width="130" height="56" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <text x="75" y="90" text-anchor="middle" fill="var(--ink)">labeled</text>
+          <text x="75" y="104" text-anchor="middle" fill="var(--ink)">paintings</text>
+
+          <rect x="210" y="20" width="130" height="56" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <text x="275" y="50" text-anchor="middle" fill="var(--ink)">trained</text>
+          <text x="275" y="64" text-anchor="middle" fill="var(--ink)">model</text>
+
+          <rect x="210" y="100" width="130" height="56" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <text x="275" y="124" text-anchor="middle" fill="var(--ink)">Grounding</text>
+          <text x="275" y="138" text-anchor="middle" fill="var(--ink)">DINO</text>
+
+          <rect x="440" y="60" width="150" height="56" fill="none" stroke="var(--sienna)" stroke-width="1.5"/>
+          <text x="515" y="84" text-anchor="middle" fill="var(--sienna)">steelyard</text>
+          <text x="515" y="98" text-anchor="middle" fill="var(--sienna)">composition</text>
+          <text x="515" y="110" text-anchor="middle" fill="var(--sienna)" font-size="9">detected</text>
+
+          <line x1="140" y1="88" x2="205" y2="50" stroke="var(--muted)" stroke-width="1"/>
+          <line x1="140" y1="88" x2="205" y2="126" stroke="var(--muted)" stroke-width="1"/>
+          <line x1="340" y1="48" x2="435" y2="80" stroke="var(--muted)" stroke-width="1"/>
+          <line x1="340" y1="128" x2="435" y2="96" stroke="var(--muted)" stroke-width="1"/>
+        </g>
+      </svg>
+      <figcaption>fig. 2.1 — simplified CANVAS pipeline</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <p class="fig">fig. 3 — beyond the research</p>
+    <h2>Everything else I make time for</h2>
+    <div class="beyond-grid">
+      <div class="beyond-item">
+        <h3>Girls Who Code</h3>
+        <p>Co-president of my school's chapter, where I develop and lead weekly lessons on Python for members learning to program.</p>
+      </div>
+      <div class="beyond-item">
+        <h3>Blue Mirror</h3>
+        <p>Editor-in-chief of my school's literary arts magazine — the closest overlap between my writing and visual art outside of CANVAS.</p>
+      </div>
+      <div class="beyond-item">
+        <h3>Visual art</h3>
+        <p>Drawing, painting, and crochet — the practice that gave me the eye CANVAS is trying to formalize.</p>
+      </div>
+      <div class="beyond-item">
+        <h3>Music</h3>
+        <p>Piano and guitar, mostly for myself, but composition thinking shows up here too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="fig">fig. 4 — get in touch</p>
+    <h2>Say hello</h2>
+    <p class="lede">I'll be at MIT starting fall 2026 studying computer science — happy to talk research, art, or anything in between.</p>
+    <div class="links-row">
+      <a href="mailto:youremail@example.com">email ↗</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">github ↗</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Built by Ella Lu · updated 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
